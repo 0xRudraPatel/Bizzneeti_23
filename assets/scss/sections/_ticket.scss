@@ -1,0 +1,218 @@
+/* ==== 
+  --------- (5.5) ticket section styles start ---------
+  ==== */
+
+.ticket {
+  .ticket__tabs {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 15px;
+    justify-content: center;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    p,
+    span,
+    input {
+      margin: 0px;
+      font-size: 18px;
+      font-weight: 500;
+      span {
+        font-weight: 600;
+        color: #fb3ea0;
+      }
+    }
+
+    input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-tap-highlight-color: transparent;
+      cursor: pointer;
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .switch-toggle {
+      width: 80px;
+      min-width: 80px;
+      height: 40px;
+      display: inline-flex;
+      position: relative;
+      margin: 0;
+      background: #ffe9db;
+      transition: all 0.2s ease;
+      border-radius: 40px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: linear-gradient(
+          269.64deg,
+          #f7eb00 -27.05%,
+          #fb1ac0 109.96%
+        );
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      &:checked {
+        &::after {
+          transform: translatex(40px) translateY(-50%);
+        }
+      }
+    }
+  }
+
+  .ticket__sidebar {
+    padding: 40px 30px;
+    background: #f4f6ff;
+    border-radius: 10px;
+
+    ul {
+      padding: 0px 20px;
+      background: $white;
+      border-radius: 5px;
+      li {
+        margin-top: 0px;
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        border-bottom: 1px solid #d5d8f0;
+        color: #181830;
+        &:nth-last-of-type(1) {
+          border-bottom: 0px;
+        }
+
+        i {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .ticket__sidebar-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    h4 {
+      margin-bottom: 15px;
+      color: #181830;
+    }
+
+    p {
+      color: #181830;
+    }
+  }
+
+  .ticket__content-regular,
+  .ticket__content-offer {
+    display: none;
+  }
+
+  .ticket__content-pricing {
+    padding: 40px 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(116, 119, 190, 0.1);
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .ticket__content-pricing-intro {
+      text-align: center;
+      h5 {
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        color: #181830;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        span {
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    hr {
+      border-color: #bababa;
+      opacity: 1;
+      margin: 30px 0px;
+    }
+
+    h5 {
+      color: #181830;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #181830;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      &:nth-last-of-type(1) {
+        margin-bottom: 0px;
+      }
+
+      i {
+        @include box(30px);
+        align-items: center;
+        justify-content: center;
+        background: rgba(231, 2, 93, 0.05);
+        border-radius: 12px;
+        color: #e7025d;
+      }
+    }
+
+    .ticket__content-pricing-cta {
+      margin-top: 40px;
+
+      .cmn-button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+
+  .ticket__content-active {
+    display: block;
+  }
+
+  .ticket__content-payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 55px;
+    .ticket__content-payment-single {
+      border: 1px solid #ddd5f4;
+      border-radius: 5px;
+    }
+    img {
+      max-width: 190px;
+      height: auto;
+    }
+  }
+}
+
+/* ==== 
+  --------- (5.5) ticket section styles end ---------
+  ==== */

@@ -1,0 +1,79 @@
+/* ==== 
+  --------- (5.4) hotel section styles start ---------
+  ==== */
+
+.hotel {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 60%;
+    background-image: url("../images/hotel-bg.png");
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .hotel__single {
+    padding: 10px 10px 30px;
+    background: #ffffff;
+    box-shadow: 0px 4px 30px rgba(120, 99, 99, 0.1);
+    border-radius: 10px;
+  }
+
+  .hotel__single-thumb {
+    border-radius: 10px;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      min-height: 190px;
+    }
+  }
+
+  .hotel__single-content {
+    padding: 30px 20px 0px;
+    h5 {
+      color: $black;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $black;
+      font-size: 16px;
+    }
+
+    .hotel__single-pricing {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    span {
+      margin-top: 0px;
+      padding: 10px 20px;
+      background: #ffede3;
+      border-radius: 10px;
+      color: $black;
+    }
+
+    .hotel__single-content-cta {
+      margin-top: 30px;
+    }
+  }
+}
+
+/* ==== 
+  --------- (5.4) hotel section styles end ---------
+  ==== */

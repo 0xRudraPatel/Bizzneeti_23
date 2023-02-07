@@ -1,0 +1,50 @@
+/* ==== 
+ --------- (4.2) banner styles start ---------
+ ==== */
+
+//  hero banner
+.hero {
+  padding: 320px 0px;
+  background-color: $primary-color;
+  background-image: url("../images/hero-bg.png"),
+    linear-gradient(269.64deg, #f7eb00 -27.05%, #fb1ac0 109.96%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+
+  .hero__content {
+    h5 {
+      font-weight: 400;
+      color: $primary-color;
+      margin-bottom: 25px;
+    }
+
+    .hero__content-title {
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .primary-text {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+
+  .hero__content-cta {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    a {
+      padding: 15px 40px;
+      border: 1px solid #c2adff;
+      border-radius: 30px;
+    }
+  }
+}
+
+/* ==== 
+ --------- (4.2) banner styles end ---------
+ ==== */

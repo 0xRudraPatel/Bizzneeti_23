@@ -1,0 +1,55 @@
+/* ==== 
+  --------- (5.6) exclusive section styles start ---------
+  ==== */
+
+.exclusive {
+  background-color: #1c225c;
+
+  .exclusive__header-content {
+    h5 {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .exclusive__row {
+    margin-top: 60px;
+  }
+
+  .exclusive__single-content {
+    padding: 30px;
+    background-color: $white;
+    max-width: 310px;
+    margin: -75% auto 0px;
+    text-align: center;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+
+    .exclusive__single-content-thumb {
+      margin-bottom: 30px;
+    }
+
+    h5 {
+      color: $black;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: $black;
+      margin-bottom: 27px;
+    }
+  }
+
+  .exclusive__single-thumb {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* ==== 
+  --------- (5.6) exclusive section styles end ---------
+  ==== */

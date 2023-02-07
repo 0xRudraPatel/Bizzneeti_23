@@ -1,0 +1,143 @@
+/* ==== 
+  --------- (5.1) event section styles start ---------
+  ==== */
+
+.event {
+  background-size: cover;
+  .event__header-content {
+    h5 {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: $quaternary-color;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+
+    p {
+      color: $tertiary-color;
+    }
+  }
+
+  .event__header-cta {
+    gap: 20px;
+    button {
+      @include box(80px);
+      background: $white;
+      box-shadow: 0px 4px 4px rgba(46, 53, 104, 0.25);
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        left: 0px;
+        width: 0px;
+        transition: $transition;
+        background-image: linear-gradient(
+          269.64deg,
+          #f7eb00 -27.05%,
+          #fb1ac0 109.96%
+        );
+      }
+      .gg-arrow-long-left {
+        position: relative;
+        display: block;
+        border-top: 1px solid $black;
+        width: 30px;
+
+        &::before {
+          content: "";
+          display: block;
+          box-sizing: border-box;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-bottom: 1px solid $black;
+          border-left: 1px solid $black;
+          left: 0;
+          top: 50%;
+          transform: translateY(-54%) rotate(45deg);
+        }
+      }
+
+      .gg-arrow-long-right {
+        position: relative;
+        display: block;
+        border-top: 1px solid $black;
+        width: 30px;
+
+        &::before {
+          content: "";
+          display: block;
+          box-sizing: border-box;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-top: 1px solid $black;
+          border-right: 1px solid $black;
+          right: 0;
+          top: 50%;
+          transform: translateY(-54%) rotate(45deg);
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+        .gg-arrow-long-left,
+        .gg-arrow-long-right {
+          border-color: $white;
+          &::before {
+            border-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .event__slider {
+    margin-top: 60px;
+  }
+
+  .event__slider-single {
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #b6a9dd;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .event__slider-single-content {
+    margin-top: 30px;
+    h4 {
+      color: $black;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: $black;
+    }
+  }
+
+  .slick-current {
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  }
+
+  .section__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+  }
+}
+
+/* ==== 
+  --------- (5.1) event section styles end ---------
+  ==== */
