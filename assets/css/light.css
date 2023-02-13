@@ -1824,174 +1824,295 @@ i {
 /* ==== 
   --------- (5.3) schedule section styles start ---------
   ==== */
-.schedule {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.schedule .section__header h2,
-.schedule .section__header p {
-  color: #181830;
-}
-
-.schedule::before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  width: 100%;
-  height: 60%;
-  background-image: url("../images/schedule-bg.png");
-  background-size: cover;
-  background-position: left top;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-.schedule .schedule__tab-btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.schedule .schedule__tab-btn {
-  padding: 15px 30px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid #8F8EBF;
-  border-radius: 10px;
-}
-
-.schedule .schedule__tab-btn span {
-  margin: 0px;
-  -webkit-transition: inherit;
-  transition: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  color: #181830;
-}
-
-.schedule .schedule__tab-btn span i {
-  -webkit-transition: inherit;
-  transition: inherit;
-}
-
-.schedule .schedule__tab-btn span:nth-last-of-type(1) {
-  font-size: 14px;
-  font-weight: 400;
-  color: #000000;
-}
-
-.schedule .schedule__tab-btn:hover {
-  background: linear-gradient(269.64deg, #f7eb00 -27.05%, #fb1ac0 109.96%);
-  -webkit-box-shadow: 0px 4px 4px rgba(103, 121, 255, 0.25);
-  box-shadow: 0px 4px 4px rgba(103, 121, 255, 0.25);
-}
-
-.schedule .schedule__tab-btn:hover span {
-  color: #f2f2f2 !important;
-}
-
-.schedule .schedule__tab-btn:hover span:nth-last-of-type(1) {
-  color: #f2f2f2;
-}
-
-.schedule .schedule__tab-btn--active {
-  background: linear-gradient(269.64deg, #f7eb00 -27.05%, #fb1ac0 109.96%);
-  -webkit-box-shadow: 0px 4px 4px rgba(103, 121, 255, 0.25);
-  box-shadow: 0px 4px 4px rgba(103, 121, 255, 0.25);
-}
-
-.schedule .schedule__tab-btn--active span {
-  color: #ffffff !important;
-}
-
-.schedule .schedule__tab-wrapper {
-  padding: 60px 40px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 0px 6px #00000050;
-}
-
-.schedule .schedule__tab-wrapper table {
-  width: 100%;
-}
-
-.schedule .schedule__tab-wrapper thead tr {
-  background: #f6ebe5;
-}
-
-.schedule .schedule__tab-wrapper tr {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 15px 20px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #9998cd50;
-}
-
-.schedule .schedule__tab-wrapper tr:nth-child(even) {
-  background: #f6ebe5;
-}
-
-.schedule .schedule__tab-wrapper tr th,
-.schedule .schedule__tab-wrapper tr td {
-  width: 22%;
-  margin-top: 0px;
-}
-
-.schedule .schedule__tab-wrapper tr th:nth-of-type(2),
-.schedule .schedule__tab-wrapper tr td:nth-of-type(2) {
-  width: 34%;
-}
-
-.schedule .schedule__tab-wrapper tr th:nth-of-type(3),
-.schedule .schedule__tab-wrapper tr th:nth-of-type(4),
-.schedule .schedule__tab-wrapper tr td:nth-of-type(3),
-.schedule .schedule__tab-wrapper tr td:nth-of-type(4) {
-  text-align: center;
-}
-
-.schedule .schedule__tab-wrapper tr th {
-  font-weight: 600;
-  color: #000000;
-}
-
-.schedule .schedule__tab-wrapper tr td {
-  font-weight: 500;
-  color: #000000;
-}
-
+  .schedule {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .schedule::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 70%;
+    background-image: url("../images/schedule-bg.png");
+    background-size: auto;
+    background-position: left top;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .schedule .schedule__tab-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .schedule .schedule__tab-btn {
+    padding: 15px 60px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid #8f8ebf;
+    border-radius: 10px;
+  }
+  
+  .schedule .schedule__tab-btn span {
+    margin: 0px;
+    -webkit-transition: inherit;
+    transition: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .schedule .schedule__tab-btn span i {
+    -webkit-transition: inherit;
+    transition: inherit;
+  }
+  
+  .schedule .schedule__tab-btn span:nth-last-of-type(1) {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .schedule .schedule__tab-btn:hover {
+    background-color: #e7025d;
+    -webkit-box-shadow: 0px 4px 4px rgba(103, 121, 255, 0.25);
+    box-shadow: 0px 4px 4px rgba(103, 121, 255, 0.25);
+    border-color: #e7025d;
+  }
+  
+  .schedule .schedule__tab-btn:hover span {
+    color: #ffffff;
+  }
+  
+  .schedule .schedule__tab-btn--active {
+    background-color: #e7025d;
+    -webkit-box-shadow: 0px 4px 4px rgba(103, 121, 255, 0.25);
+    box-shadow: 0px 4px 4px rgba(103, 121, 255, 0.25);
+    border-color: #e7025d;
+  }
+  
+  .schedule .schedule__tab-btn--active span {
+    color: #ffffff;
+  }
+  
+  .schedule .schedule__tab-content {
+    padding: 40px 0px 20px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .schedule .schedule__tab-content::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 1400px;
+    max-width: 1400px;
+    background-color: #ffffff;
+    z-index: -1;
+  }
+  
+  .schedule .schedule__tab-content-tabs {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 100px;
+    column-gap: 100px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a7a2a2;
+    margin-bottom: 60px;
+  }
+  
+  .schedule .schedule__tab-content-tabs-btn {
+    font-weight: 400;
+    position: relative;
+    color: #000000;
+  }
+  
+  .schedule .schedule__tab-content-tabs-btn:hover {
+    color: #000000;
+  }
+  
+  .schedule .schedule__tab-content-tabs-btn::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+  }
+  
+  .schedule .schedule__tab-content-tabs-btn--active {
+    color: #000000;
+  }
+  
+  .schedule .schedule__tab-content-tabs-btn--active::before {
+    background-color: #e7025d;
+  }
+  
+  .schedule .schedule__tab-content-tabs-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .schedule .schedule__tab-content-tabs-content .inner__tab-thumb {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-width: 240px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .schedule .schedule__tab-content-tabs-content .inner__tab-thumb::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e7025d;
+    z-index: -1;
+    -webkit-transform: translate(20px, 20px);
+    transform: translate(20px, 20px);
+  }
+  
+  .schedule .schedule__tab-content-tabs-content h3 {
+    color: #000000;
+  }
+  
+  .schedule .inner__tab-schedule {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 60px;
+    column-gap: 60px;
+    row-gap: 15px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+  }
+  
+  .schedule .inner__tab-schedule p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    color: #181830;
+  }
+  
+  .schedule .inner__tab-schedule p::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: -30px;
+    width: 1px;
+    height: 30px;
+    background-color: #ff0065;
+  }
+  
+  .schedule .inner__tab-schedule p i {
+    color: #e7025d;
+  }
+  
+  .schedule .inner__tab-schedule p:nth-last-of-type(1) {
+    color: #e7025d;
+  }
+  
+  .schedule .inner__tab-schedule p:nth-last-of-type(1)::before {
+    content: none;
+  }
+  
+  .schedule .inner__tab-content-info p {
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #4c4c4c;
+  }
+  
+  .schedule .inner__tab-content-info p:nth-last-of-type(1) {
+    margin-bottom: 0px;
+  }
+  
+  .schedule .inner__tab-content-info button {
+    background-color: transparent;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: #000000;
+  }
+  
+  .schedule .inner__tab-content-info button i {
+    font-size: 24px;
+    color: inherit;
+  }
+  
+  .schedule .inner__tab-content-info button:hover {
+    color: #ff0065;
+  }
+  
 /* ==== 
   --------- (5.3) schedule section styles end ---------
   ==== */
@@ -3041,10 +3162,6 @@ i {
  --------- (6.0) responsive styles start ---------
  ==== */
 @media only screen and (min-width: 1400px) {
-  .schedule .container {
-    max-width: 1400px;
-  }
-
   .exclusive__row {
     max-width: 1750px;
   }
@@ -3357,27 +3474,32 @@ i {
     padding: 40px 20px;
   }
 
-  .schedule .schedule__tab-wrapper {
-    overflow-x: auto;
+  .schedule .schedule__tab-content-tabs-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
-  .schedule .schedule__tab-wrapper::-webkit-scrollbar {
-    height: 5px;
+  .schedule .schedule__tab-content-tabs {
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
   }
 
-  .schedule .schedule__tab-wrapper::-webkit-scrollbar-track {
-    background-color: #cae6f7;
-    border-radius: 5px;
+  .schedule .schedule__tab-btn {
+    padding: 10px 20px;
+    gap: 0px;
   }
 
-  .schedule .schedule__tab-wrapper::-webkit-scrollbar-button,
-  .schedule .schedule__tab-wrapper::-webkit-scrollbar-thumb {
-    background-color: #f8ed00;
-    border-radius: 5px;
+  .schedule .schedule__tab-btn span {
+    font-size: 20px;
   }
 
-  .schedule .schedule__tab-wrapper table {
-    width: 992px;
+  .schedule .schedule__tab-content-tabs-btn {
+    font-size: 14px;
   }
 
   .ticket .ticket__content-pricing {
@@ -3591,6 +3713,10 @@ i {
     width: 100%;
   }
 
+  .schedule .inner__tab-schedule p::before {
+    content: none;
+  }
+
   .hotel .hotel__single-content {
     padding: 30px 10px 0px;
   }
@@ -3640,6 +3766,10 @@ i {
 
   .footer .footer__form-content .footer__form-phone::before {
     content: none;
+  }
+
+  .schedule::before {
+    background-position: center top;
   }
 }
 
