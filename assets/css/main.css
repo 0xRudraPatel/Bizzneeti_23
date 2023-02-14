@@ -1395,6 +1395,16 @@ i {
   color: #000000;
 }
 
+.event__slider-single-thumb {
+  height: 10rem;
+}
+
+.event__slider-single-thumb img {
+  scale: 0.3;
+  position: relative;
+  top: -5rem;
+}
+
 .event .slick-current {
   background: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
@@ -1798,6 +1808,10 @@ i {
   
   .schedule .inner__tab-schedule p:nth-last-of-type(1)::before {
     content: none;
+  }
+
+  .schedule .inner__tab-content-info {
+    margin-bottom: 7rem;
   }
   
   .schedule .inner__tab-content-info p {
@@ -2917,6 +2931,10 @@ i {
   .hero .hero__content-cta a {
     padding: 10px 30px;
   }
+
+  .speaker__slider-single {
+    height: 30rem;
+  }
   .speaker .speaker__slider-single .speaker__slider-single-inner::before {
     transform: rotate(34.91deg) translate(120px, -110px) scaleY(4.3);
   }
@@ -3038,6 +3056,10 @@ i {
   .schedule::before {
     background-position: center top;
   }
+
+  .event__slider-single-thumb img {
+    scale: 0.5;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -3050,18 +3072,17 @@ i {
   margin-top: 10rem;
 }
 
-
 #section-sponsors .container img {
   scale: 0.7;
-  float: center;
+  float: left;
   max-width: 100%;
   height: 100px;
   margin-left: auto;
 }
+
 .speaker__slider-single {
   height: 30rem;
 }
-
 /* ==== 
   --------- (6.0) responsive styles end ---------
   ==== */
