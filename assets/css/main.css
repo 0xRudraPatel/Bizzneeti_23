@@ -442,7 +442,7 @@ i {
 }
 
 #modeSwitcher .label {
-  background-color: #fb1ac0;
+  background-color: #8069bd;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -494,8 +494,8 @@ i {
   font-weight: 600;
   padding: 15px 30px;
   color: #ffffff;
-  background-color: #f8ed00;
-  background-image: linear-gradient(-269.64deg, #f7eb00 -27.05%, #fb1ac0 109.96%);
+  background-color: #ffffff;
+  background-image: linear-gradient(-269.64deg, #00bd98  -27.05%, #8069bd 109.96%);
   box-shadow: 0px 4px 4px rgba(103, 121, 255, 0.25);
   border-radius: 5px;
   position: relative;
@@ -511,8 +511,8 @@ i {
   bottom: 0px;
   width: 100%;
   height: 100%;
-  background-color: #f8ed00;
-  background-image: linear-gradient(269.64deg, #f7eb00 -27.05%, #fb1ac0 109.96%);
+  background-color: #ffffff;
+  background-image: linear-gradient(269.64deg, #00bd98  -27.05%, #8069bd 109.96%);
   z-index: -1;
   border-radius: 5px 0px 0px 5px;
   transition: all 0.2s ease-out;
@@ -536,7 +536,7 @@ i {
 
 .cmn-button--secondary:hover {
   color: #ffffff;
-  border: 1px solid #fb1ac0;
+  border: 1px solid #8069bd;
 }
 
 .cmn-button--secondary:hover::before {
@@ -1063,15 +1063,15 @@ i {
  ==== */
 .hero {
   padding: 320px 0px;
-  background-color: #f8ed00;
-  background-image: url("../images/hero-bg.png"), linear-gradient(269.64deg, #f7eb00 -27.05%, #fb1ac0 109.96%);
+  background-color: #ffffff;
+  background-image: url("../images/hero-bg.png"), linear-gradient(269.64deg, #00bd98  -27.05%, #8069bd 109.96%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
 }
 
 /* .hero .hero__content{ */
-/*   background-image: linear-gradient(269.64deg, #1f2462 -27.05%, #fb1ac0 109.96%); */
+/*   background-image: linear-gradient(269.64deg, #1f2462 -27.05%, #8069bd 109.96%); */
 /* } */
 
 .hero .hero__content h5 {
@@ -1167,7 +1167,7 @@ i {
 }
 
 .footer .footer__form-content .footer__form-content-social a:hover {
-  color: #fb1ac0;
+  color: #8069bd;
 }
 
 .footer .footer__form-content .footer__form-phone {
@@ -1308,7 +1308,7 @@ i {
   left: 0px;
   width: 0px;
   transition: all 0.2s ease-out;
-  background-image: linear-gradient(269.64deg, #f7eb00 -27.05%, #fb1ac0 109.96%);
+  background-image: linear-gradient(269.64deg, #00bd98  -27.05%, #8069bd 109.96%);
 }
 
 .event .event__header-cta button .gg-arrow-long-left {
@@ -1427,7 +1427,7 @@ i {
   ==== */
 .speaker .speaker__slider-single {
   position: relative;
-  border: 1px solid #fb1ac0;
+  border: 1px solid #8069bd;
   border-radius: 10px;
   margin-top: 30px;
   z-index: 1;
@@ -1454,7 +1454,7 @@ i {
   width: 100%;
   height: 100%;
   left: 0px;
-  background: linear-gradient(180deg, transparent 30%, #f7eb00 0%, #fb1ac0 100%);
+  background: linear-gradient(180deg, transparent 30%, #00bd98  0%, #8069bd 100%);
   transform: rotate(34.91deg) translate(120px, -110px) scaleY(2.3);
 }
 
@@ -1542,7 +1542,7 @@ i {
   left: 0px;
   width: 0px;
   transition: all 0.2s ease-out;
-  background-image: linear-gradient(269.64deg, #f7eb00 -27.05%, #fb1ac0 109.96%);
+  background-image: linear-gradient(269.64deg, #00bd98  -27.05%, #8069bd 109.96%); 
 }
 
 .speaker .section__cta button .gg-arrow-long-left {
@@ -1811,7 +1811,7 @@ i {
   }
 
   .schedule .inner__tab-content-info {
-    margin-bottom: 7rem;
+    margin-bottom: 1rem;
   }
   
   .schedule .inner__tab-content-info p {
@@ -1903,7 +1903,7 @@ i {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: linear-gradient(269.64deg, #f7eb00 -27.05%, #fb1ac0 109.96%);
+  background: linear-gradient(269.64deg, #00bd98  -27.05%, #8069bd 109.96%);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -2173,8 +2173,8 @@ i {
 
 .faq .faq__content .accordion-button:not(.collapsed)::after {
   content: "\f068";
-  background-color: #f8ed00;
-  background-image: linear-gradient(269.64deg, #F7EB00 -27.05%, #FB1AC0 109.96%);
+  background-color: #ffffff;
+  background-image: linear-gradient(269.64deg, #00bd98  -27.05%, #8069bd 109.96%);
   color: #f2f2f2;
 }
 
@@ -2786,8 +2786,8 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f8ed00;
-    background-image: linear-gradient(-269.64deg, #f7eb00 -27.05%, #fb1ac0 109.96%);
+    background-color: #ffffff;
+    background-image: linear-gradient(-269.64deg, #00bd98  -27.05%, #8069bd 109.96%);
   }
   .backdrop {
     display: block;
